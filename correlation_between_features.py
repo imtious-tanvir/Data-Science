@@ -8,8 +8,10 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
+#compare only two features
 correlation = df["X"].corr(df["Y"])
 print(f"Correlation Calculation is = {correlation}")
 
+#compare all features
 correlation = df.corr()
 print(f"Correlation Calculation is = {correlation}")
